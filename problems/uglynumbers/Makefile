@@ -27,10 +27,10 @@ $(info + making $(BIN) directory)
 $(shell mkdir -p $(BIN))
 
 # copy the data file in to bin/ if it is not there
-ifeq ($(wildcard $(BIN)/$(DATA_FILE)),)
-$(info + copying data file to $(BIN))
-$(shell cp $(DATADIR)/$(DATA_FILE) $(BIN)/)
-endif
+# ifeq ($(wildcard $(BIN)/$(DATA_FILE)),)
+# $(info + copying data file to $(BIN))
+# $(shell cp $(DATADIR)/$(DATA_FILE) $(BIN)/)
+# endif
 
 
 # compiling
